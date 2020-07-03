@@ -1,0 +1,21 @@
+
+//Giriþ Kontrol Alanýnýn Baþýna Eklenecek
+
+
+require_once '../../securimage/securimage.php';
+
+	$securimage = new Securimage();
+
+	if ($securimage->check($_POST['captcha_code']) == false) {
+
+		header("Location:../../login?durum=captchahata");
+		exit;
+
+	}
+
+
+Güvenlik Resmi Çekimi
+<img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+
+Güvenlik Resmi Deðiþtirme
+<a class="btn btn-danger btn-xs" href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Deðiþtir ]</a>

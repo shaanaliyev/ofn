@@ -1,0 +1,114 @@
+
+/*=======================================================================
+Adi google
+=========================================================================*/
+@font-face {
+    src: url("Ubuntu.ttf");
+    font-family: s-main;
+}
+@font-face {
+    src: url("Mukta.ttf");
+    font-family: s-muk;
+}
+@font-face {
+    src: url("Orbitron.ttf");
+    font-family: orb;
+}
+@font-face {
+    src: url("Orbitron.ttf");
+    font-family: orb;
+}
+@font-face {
+    src: url("JosefinSans.ttf");
+    font-family: jose;
+}
+
+/*=======================================================================
+RH disp
+=========================================================================*/
+
+@font-face {
+    src: url("RedHatDisplay-Regular.ttf");
+    font-family: rh-1;
+}
+@font-face {
+    src: url("RedHatDisplay-Medium.ttf");
+    font-family: rh-2;
+}
+@font-face {
+    src: url("RedHatDisplay-MediumItalic.ttf");
+    font-family: rh-2i;
+}
+@font-face {
+    src: url("RedHatDisplay-Italic.ttf");
+    font-family: rh-i;
+}
+@font-face {
+    src: url("RedHatDisplay-Bold.ttf");
+    font-family: rh-b;
+}
+@font-face {
+    src: url("RedHatDisplay-Black.ttf");
+    font-family: rh-3;
+}
+@font-face {
+    src: url("RedHatDisplay-BlackItalic.ttf");
+    font-family: rh-3i;
+}
+
+/*=======================================================================
+RH text
+=========================================================================*/
+
+@font-face {
+    src: url("RedHatText-Regular.ttf");
+    font-family: rh-t1;
+}
+@font-face {
+    src: url("RedHatText-Medium.ttf");
+    font-family: rh-t2;
+}
+@font-face {
+    src: url("RedHatText-MediumItalic.ttf");
+    font-family: rh-t2i;
+}
+@font-face {
+    src: url("RedHatText-Italic.ttf");
+    font-family: rh-ti;
+}
+@font-face {
+    src: url("RedHatText-BoldItalic.ttf");
+    font-family: rh-tbi;
+}
+@font-face {
+    src: url("RedHatText-Bold.ttf");
+    font-family: rh-tb;
+}
+
+
+/*=======================================================================
+MS text
+=========================================================================*/
+
+@font-face {
+    src: url("Montserrat-Regular.ttf");
+    font-family: ms-1;
+}
+
+@font-face {
+    src: url("Montserrat-Italic.ttf");
+    font-family: ms-1i;
+}
+@font-face {
+    src: url("Montserrat-Light.ttf");
+    font-family: ms-2;
+}
+@font-face {
+    src: url("Montserrat-Thin.ttf");
+    font-family: ms-3;
+}
+@font-face {
+    src: url("Montserrat-Medium.ttf");
+    font-family: ms-4;
+}
+

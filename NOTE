@@ -1,0 +1,6 @@
+//Cookie de header already sent porblemi olnada
+-- headerden yuxarida cookie yaratmaq.
+veya
+-- ob_start() istifade elemek (require_once headerin evvelinde (cookie yaradildiqdan sonra pramoy ob_end_flush() istifade etmek)
+
+//
