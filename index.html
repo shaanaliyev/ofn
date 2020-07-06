@@ -11,32 +11,76 @@
 		::selection {
 			background: rgba(255,20,20,0.3);
 		}
+		body{
+			padding: 0; margin: 0;
+		}
+		h1{
+			color: red;
+		}
+		#s1{
+			background-color: #1a1a1a; width: 100%;height: 100vh;
+		}
+		#s2{
+			text-align: center; padding-top: 33vh; color: white;
+		}
+		#s3{
+			margin-top: -25px;
+		}
+		#s4{
+			color: white; text-decoration: none;
+		}
+		#mytime{
+			font-size: 55px;
+		}
+		@media only screen and (max-width: 1200px) {
+			#mytime{
+				font-size: 35px;
+			}
+			#s3{
+				margin-top: -15px;
+			}
+		}
+		@media only screen and (max-width: 767px) {
+			h1{
+				font-size: 23px;
+			}
+			#mytime{
+				font-size: 25px;
+			}
+			#s3{
+				margin-top: 0;
+			}
+			#s4{
+				font-size: 15px;
+			}
+		}
+
 	</style>
 	<link rel="shortcut icon" type="image/x-icon" href="icon.svg">
 </head>
 
-<body style="padding: 0; margin: 0;">
-	<div style="background-color: #1a1a1a; width: 100%;height: 100vh;">
-		<div style="text-align: center; padding-top: 35vh; color: white;">
-			<h1 style="color: red;">One Family Network</h1>
-			<h2 id="mytime" style="font-size: 55px;"></h1>
-			<div style="margin-top: -25px;">
-				<a style="color: white; text-decoration: none;" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
+<body>
+	<div id="s1">
+		<div id="s2">
+			<h1>One Family Network</h1>
+			<h2 id="mytime"></h1>
+				<div id="s3">
+					<a id="s4" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<script type="text/javascript">
-		var mytime = new Date("Apr 11, 2000 08:12:11").getTime();
-		var x = setInterval(function() {
-			var now = new Date().getTime();
-			var distance = now-mytime;
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-			document.getElementById("mytime").innerHTML = days + " <x style='color:red;'>d</x> " + hours + " <x style='color:red;'>h</x> "
-			+ minutes + " <x style='color:red;'>m</x> " + seconds + " <x style='color:red;'>s</x> ";
-		}, 1000);
-	</script>
-</body>
-</html>
+		<script type="text/javascript">
+			var mytime = new Date("Apr 11, 2000 08:12:11").getTime();
+			var x = setInterval(function() {
+				var now = new Date().getTime();
+				var distance = now-mytime;
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				document.getElementById("mytime").innerHTML = days + " <x style='color:red;'>d</x> " + hours + " <x style='color:red;'>h</x> "
+				+ minutes + " <x style='color:red;'>m</x> " + seconds + " <x style='color:red;'>s</x> ";
+			}, 1000);
+		</script>
+	</body>
+	</html>
