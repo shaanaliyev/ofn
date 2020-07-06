@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 	<title>One Family Network</title>
 	<meta charset="UTF-8">
@@ -17,6 +17,10 @@
 		h1{
 			color: red;
 		}
+		x:hover{
+			color: white;
+			transition: 0.2s ease;
+		}
 		#s1{
 			background-color: #1a1a1a; width: 100%;height: 100vh;
 		}
@@ -31,9 +35,20 @@
 			color: white; text-decoration: none;
 			transition: 0.2s ease;
 		}
+		#s4:hover{
+			color: grey;
+		}
 		#mytime{
 			font-size: 55px;
 			transition: 0.2s ease;
+		}
+		#s5{
+			position: fixed; 
+			bottom: 0;
+			right: 0;
+			color: gray;
+			margin: 0 15px 10px 0;
+			font-size: 13px;
 		}
 		@media only screen and (max-width: 1200px) {
 			#mytime{
@@ -65,10 +80,15 @@
 <body>
 	<div id="s1">
 		<div id="s2">
-			<h1>One Family Network</h1>
+			<h1>One <x>Family</x> Network</h1>
 			<h2 id="mytime"></h1>
 				<div id="s3">
 					<a id="s4" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
+				</div>
+			</div>
+			<div id="s5">
+				<div>
+					 Copyright © <x>OneFamilyNetwork</x>
 				</div>
 			</div>
 		</div>
