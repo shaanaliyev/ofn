@@ -16,6 +16,8 @@
 		}
 		h1{
 			color: red;
+			transition: 0.4s ease;
+
 		}
 		x:hover{
 			color: white;
@@ -25,11 +27,15 @@
 			background-color: #1a1a1a; width: 100%;height: 100vh;
 		}
 		#s2{
-			text-align: center; padding-top: 33vh; color: white;
+			text-align: center; padding-top: 34vh; color: white;
 		}
 		#s3{
-			margin-top: -25px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			margin: 0 0 10px 15px;
 			transition: 0.2s ease;
+			font-size: 15px;
 		}
 		#s4{
 			color: white; text-decoration: none;
@@ -40,7 +46,8 @@
 		}
 		#mytime{
 			font-size: 55px;
-			transition: 0.2s ease;
+			transition: 0.8s ease;
+			opacity: 0;
 		}
 		#s5{
 			position: fixed; 
@@ -54,9 +61,6 @@
 			#mytime{
 				font-size: 35px;
 			}
-			#s3{
-				margin-top: -15px;
-			}
 		}
 		@media only screen and (max-width: 767px) {
 			h1{
@@ -64,9 +68,6 @@
 			}
 			#mytime{
 				font-size: 25px;
-			}
-			#s3{
-				margin-top: 0;
 			}
 			#s4{
 				font-size: 15px;
@@ -82,13 +83,13 @@
 		<div id="s2">
 			<h1>One <x>Family</x> Network</h1>
 			<h2 id="mytime"></h1>
-				<div id="s3">
+			</div>
+			<div id="s3">
 					<a id="s4" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
 				</div>
-			</div>
 			<div id="s5">
 				<div>
-					 Copyright © <x>OneFamilyNetwork</x>
+					 Copyright <x1>2020</x1> © <x>OneFamilyNetwork</x>
 				</div>
 			</div>
 		</div>
@@ -97,10 +98,12 @@
 			var x = setInterval(function() {
 				var now = new Date().getTime();
 				var distance = now-mytime;
+				var year = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
 				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				document.getElementById("mytime").style.opacity="1";
 				document.getElementById("mytime").innerHTML = days + " <x style='color:red;'>d</x> " + hours + " <x style='color:red;'>h</x> "
 				+ minutes + " <x style='color:red;'>m</x> " + seconds + " <x style='color:red;'>s</x> ";
 			}, 1000);
