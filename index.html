@@ -14,12 +14,14 @@
 		body{
 			padding: 0; margin: 0;
 			overflow: hidden;
-			user-select: none;
 		}
 		h1{
 			color: red;
 			transition: 0.4s ease;
 
+		}
+		.dont{
+			user-select: none;
 		}
 		x:hover{
 			color: white;
@@ -83,14 +85,14 @@
 <body>
 	<div id="s1">
 		<div id="s2">
-			<h1>One <x>Family</x> Network</h1>
-			<h2 id="mytime"></h1>
+			<h1 class="dont">One <x>Family</x> Network</h1>
+			<h2 id="mytime" class="dont"></h1>
 			</div>
 			<div id="s3">
-					<a id="s4" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
+					<a id="s4" target="_blank" class="dont" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
 				</div>
 			<div id="s5">
-				<div>
+				<div class="dont">
 					 Copyright <x1>2020</x1> © <x>OneFamilyNetwork</x>
 				</div>
 			</div>
