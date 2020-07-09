@@ -20,6 +20,9 @@
 			transition: 0.4s ease;
 
 		}
+		.dont{
+			user-select: none;
+		}
 		x:hover{
 			color: white;
 			transition: 0.2s ease;
@@ -28,7 +31,14 @@
 			background-color: #1a1a1a; width: 100%;height: 100vh;
 		}
 		#s2{
-			text-align: center; padding-top: 34vh; color: white;
+			text-align: center; padding-top: 26vh; color: white;
+		}
+		#s2c{
+			padding: 0 0 3px 0;
+		}
+		#code{
+			font-size: 15px;
+			color: red;
 		}
 		#s3{
 			position: fixed;
@@ -82,15 +92,18 @@
 <body>
 	<div id="s1">
 		<div id="s2">
+			<div id="s2c">
+				<div id='code'>0</div>
+			</div>
 			<h1>One <x>Family</x> Network</h1>
 			<h2 id="mytime"></h1>
 			</div>
 			<div id="s3">
-					<a id="s4" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
-				</div>
+				<a id="s4" target="_blank" href="https://www.facebook.com/iamshaanaliyev/">Contact</a>
+			</div>
 			<div id="s5">
 				<div>
-					 Copyright <x1>2020</x1> © <x>OneFamilyNetwork</x>
+					Copyright <x1>2020</x1> © <x>OneFamilyNetwork</x>
 				</div>
 			</div>
 		</div>
@@ -108,6 +121,15 @@
 				document.getElementById("mytime").innerHTML = days + " <x style='color:red;'>d</x> " + hours + " <x style='color:red;'>h</x> "
 				+ minutes + " <x style='color:red;'>m</x> " + seconds + " <x style='color:red;'>s</x> ";
 			}, 1000);
+			var i=0, interval;
+				interval = setInterval(function(){
+						document.getElementById('code').innerText = i+mytime*Math.floor(Math.random()*20);;
+						i+=20000411;
+				},1000);
+			
+
+
+
 		</script>
 	</body>
 	</html>
