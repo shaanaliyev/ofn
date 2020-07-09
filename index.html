@@ -74,8 +74,12 @@
 			}
 		}
 		@media only screen and (max-width: 767px) {
+
 			h1{
 				font-size: 23px;
+			}
+			#s2{
+				padding-top: 30vh;
 			}
 			#mytime{
 				font-size: 25px;
@@ -122,10 +126,10 @@
 				+ minutes + " <x style='color:red;'>m</x> " + seconds + " <x style='color:red;'>s</x> ";
 			}, 1000);
 			var i=0, interval;
-				interval = setInterval(function(){
-						document.getElementById('code').innerText = i+mytime*Math.floor(Math.random()*20);;
-						i+=20000411;
-				},1000);
+			interval = setInterval(function(){
+				document.getElementById('code').innerText = i+mytime*Math.floor(Math.random()*20);;
+				i+=20000411;
+			},1000);
 			
 
 
