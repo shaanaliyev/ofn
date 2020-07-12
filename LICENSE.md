@@ -1,4 +1,4 @@
 # PLOFN
 Private license of One Family Network
-
-All rights reserved. https://onefamilynetwork.com/
+https://onefamilynetwork.com/
+All rights reserved. 
